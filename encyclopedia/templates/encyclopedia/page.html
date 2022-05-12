@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %} 
+
+{% block title %} 
+{{ title }}
+{% endblock %} 
+
+{% block body %}
+
+    <section>{{ markup | safe }}</section>
+    <section> Want to edit the entry? <a class="button" href="{% url 'edit' title%}">Edit</a></section>
+
+{% endblock %}
